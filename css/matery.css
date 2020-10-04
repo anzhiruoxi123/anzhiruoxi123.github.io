@@ -120,6 +120,7 @@ pre {
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
+    color: #15ff08;
 }
 
 .code-area::after {
