@@ -1638,7 +1638,7 @@ thead {
 }
 
 .post-statis .statis .count a {
-    color: #42b983;
+    color:rgba(156, 39, 176, 0.75);
 }
 
 .post-statis .statis .name {
@@ -1659,8 +1659,8 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
-    background: radial-gradient(#4cbf30, #0f9d58);
+    border: 1px solid rgba(132, 13, 121, 0.75);
+    background: radial-gradient(rgba(156, 39, 176, 0.75), rgba(156, 39, 176, 0.75));
     font-size: 0.9rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
