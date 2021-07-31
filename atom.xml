@@ -6,7 +6,7 @@
   <link href="https://anzhiruoxi123.github.io/atom.xml" rel="self"/>
   
   <link href="https://anzhiruoxi123.github.io/"/>
-  <updated>2021-07-30T09:18:10.065Z</updated>
+  <updated>2021-07-31T03:35:03.509Z</updated>
   <id>https://anzhiruoxi123.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sakuraplus主题教程</title>
+    <link href="https://anzhiruoxi123.github.io/2021/07/31/sakuraplus-zhu-ti-jiao-cheng/"/>
+    <id>https://anzhiruoxi123.github.io/2021/07/31/sakuraplus-zhu-ti-jiao-cheng/</id>
+    <published>2021-07-31T03:32:47.000Z</published>
+    <updated>2021-07-31T03:35:03.509Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://anzhiruoxi123.github.io/categories/Hexo/"/>
+    
+    <category term="Web" scheme="https://anzhiruoxi123.github.io/categories/Hexo/Web/"/>
+    
+    
+    <category term="Hexo" scheme="https://anzhiruoxi123.github.io/tags/Hexo/"/>
+    
+    <category term="Web" scheme="https://anzhiruoxi123.github.io/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3D相册</title>
+    <link href="https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/"/>
+    <id>https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/</id>
+    <published>2021-07-31T03:32:36.000Z</published>
+    <updated>2021-07-31T03:34:20.333Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Html" scheme="https://anzhiruoxi123.github.io/categories/Html/"/>
+    
+    <category term="Css" scheme="https://anzhiruoxi123.github.io/categories/Html/Css/"/>
+    
+    <category term="Js" scheme="https://anzhiruoxi123.github.io/categories/Html/Css/Js/"/>
+    
+    
+    <category term="Html" scheme="https://anzhiruoxi123.github.io/tags/Html/"/>
+    
+    <category term="Css" scheme="https://anzhiruoxi123.github.io/tags/Css/"/>
+    
+    <category term="Js" scheme="https://anzhiruoxi123.github.io/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>国内Github访问加速</title>
@@ -515,46 +577,6 @@
     
     
     <category term="Hexo" scheme="https://anzhiruoxi123.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>循环和判断</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/04/xun-huan-he-pan-duan/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/04/xun-huan-he-pan-duan/</id>
-    <published>2020-10-04T08:52:16.000Z</published>
-    <updated>2021-07-29T12:02:03.519Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>404</title>
-    <link href="https://anzhiruoxi123.github.io/2017/07/19/404/"/>
-    <id>https://anzhiruoxi123.github.io/2017/07/19/404/</id>
-    <published>2017-07-19T08:41:10.000Z</published>
-    <updated>2021-07-29T12:02:03.162Z</updated>
-    
-    
-    <summary type="html">你访问的页面被外星人叼走了 :(</summary>
-    
-    
-    
     
   </entry>
   
