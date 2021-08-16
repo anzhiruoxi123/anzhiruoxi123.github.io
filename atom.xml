@@ -6,7 +6,7 @@
   <link href="https://anzhiruoxi123.github.io/atom.xml" rel="self"/>
   
   <link href="https://anzhiruoxi123.github.io/"/>
-  <updated>2021-07-31T03:35:03.509Z</updated>
+  <updated>2021-08-16T10:21:44.909Z</updated>
   <id>https://anzhiruoxi123.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客优化加速</title>
+    <link href="https://anzhiruoxi123.github.io/2021/08/16/servlet/"/>
+    <id>https://anzhiruoxi123.github.io/2021/08/16/servlet/</id>
+    <published>2021-08-16T10:19:55.000Z</published>
+    <updated>2021-08-16T10:21:44.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Servlet" scheme="https://anzhiruoxi123.github.io/categories/Servlet/"/>
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/categories/Servlet/java/"/>
+    
+    
+    <category term="Servlet" scheme="https://anzhiruoxi123.github.io/tags/Servlet/"/>
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>sakuraplus主题教程</title>
@@ -50,7 +79,7 @@
     <link href="https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/"/>
     <id>https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/</id>
     <published>2021-07-31T03:32:36.000Z</published>
-    <updated>2021-07-31T03:34:20.333Z</updated>
+    <updated>2021-08-04T03:46:29.808Z</updated>
     
     
       
@@ -552,31 +581,6 @@
     
     
     <category term="Mysql" scheme="https://anzhiruoxi123.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>看板娘</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/04/kan-ban-niang/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/04/kan-ban-niang/</id>
-    <published>2020-10-04T12:41:04.000Z</published>
-    <updated>2021-07-29T12:02:03.404Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://anzhiruoxi123.github.io/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://anzhiruoxi123.github.io/tags/Hexo/"/>
     
   </entry>
   
