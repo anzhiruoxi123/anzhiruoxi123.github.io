@@ -6,7 +6,7 @@
   <link href="https://anzhiruoxi123.github.io/atom.xml" rel="self"/>
   
   <link href="https://anzhiruoxi123.github.io/"/>
-  <updated>2021-08-16T10:28:13.176Z</updated>
+  <updated>2021-09-13T09:59:33.982Z</updated>
   <id>https://anzhiruoxi123.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux目录和文件管理</title>
+    <link href="https://anzhiruoxi123.github.io/2021/09/13/linux-mu-lu-he-wen-jian-guan-li/"/>
+    <id>https://anzhiruoxi123.github.io/2021/09/13/linux-mu-lu-he-wen-jian-guan-li/</id>
+    <published>2021-09-13T09:55:23.000Z</published>
+    <updated>2021-09-13T09:59:33.982Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://anzhiruoxi123.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://anzhiruoxi123.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux系统安装实验</title>
+    <link href="https://anzhiruoxi123.github.io/2021/09/12/linux-xi-tong-an-zhuang-shi-yan/"/>
+    <id>https://anzhiruoxi123.github.io/2021/09/12/linux-xi-tong-an-zhuang-shi-yan/</id>
+    <published>2021-09-12T03:13:20.000Z</published>
+    <updated>2021-09-12T03:14:41.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://anzhiruoxi123.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://anzhiruoxi123.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Servlet</title>
@@ -79,7 +129,7 @@
     <link href="https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/"/>
     <id>https://anzhiruoxi123.github.io/2021/07/31/3d-xiang-ce/</id>
     <published>2021-07-31T03:32:36.000Z</published>
-    <updated>2021-08-04T03:46:29.808Z</updated>
+    <updated>2021-09-12T02:13:07.986Z</updated>
     
     
       
@@ -192,9 +242,9 @@
     
     <category term="PicGo" scheme="https://anzhiruoxi123.github.io/tags/PicGo/"/>
     
-    <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
-    
     <category term="Cmd" scheme="https://anzhiruoxi123.github.io/tags/Cmd/"/>
+    
+    <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
     
   </entry>
   
@@ -225,9 +275,9 @@
     
     <category term="PicGo" scheme="https://anzhiruoxi123.github.io/tags/PicGo/"/>
     
-    <category term="Typora" scheme="https://anzhiruoxi123.github.io/tags/Typora/"/>
-    
     <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
+    
+    <category term="Typora" scheme="https://anzhiruoxi123.github.io/tags/Typora/"/>
     
   </entry>
   
@@ -284,11 +334,11 @@
   </entry>
   
   <entry>
-    <title>Hexo搭建Github博客-EN</title>
-    <link href="https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-en/"/>
-    <id>https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-en/</id>
+    <title>Hexo搭建Github博客-CN</title>
+    <link href="https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-cn/"/>
+    <id>https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-cn/</id>
     <published>2021-07-23T09:49:04.000Z</published>
-    <updated>2021-07-29T12:02:03.621Z</updated>
+    <updated>2021-07-29T12:02:03.365Z</updated>
     
     
       
@@ -317,11 +367,11 @@
   </entry>
   
   <entry>
-    <title>Hexo搭建Github博客-CN</title>
-    <link href="https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-cn/"/>
-    <id>https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-cn/</id>
+    <title>Hexo搭建Github博客-EN</title>
+    <link href="https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-en/"/>
+    <id>https://anzhiruoxi123.github.io/2021/07/23/tu-shu-guan-li-xi-tong-en/</id>
     <published>2021-07-23T09:49:04.000Z</published>
-    <updated>2021-07-29T12:02:03.365Z</updated>
+    <updated>2021-07-29T12:02:03.621Z</updated>
     
     
       
@@ -372,9 +422,9 @@
     <category term="Hexo" scheme="https://anzhiruoxi123.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Hexo/"/>
     
     
-    <category term="学习笔记" scheme="https://anzhiruoxi123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Hexo" scheme="https://anzhiruoxi123.github.io/tags/Hexo/"/>
+    
+    <category term="学习笔记" scheme="https://anzhiruoxi123.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -515,56 +565,6 @@
     <id>https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-ji-ben-cha-xun/</id>
     <published>2020-10-10T11:10:11.000Z</published>
     <updated>2021-07-29T12:02:03.124Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/categories/Mysql/"/>
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>while和for应用</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/10/while-he-for-ying-yong/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/10/while-he-for-ying-yong/</id>
-    <published>2020-10-10T11:09:33.000Z</published>
-    <updated>2021-07-29T12:02:03.336Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库标准语言sql</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-biao-zhun-yu-yan-sql/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-biao-zhun-yu-yan-sql/</id>
-    <published>2020-10-10T11:08:26.000Z</published>
-    <updated>2021-07-29T12:02:03.297Z</updated>
     
     
       
