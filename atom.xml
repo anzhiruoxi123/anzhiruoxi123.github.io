@@ -6,7 +6,7 @@
   <link href="https://anzhiruoxi123.github.io/atom.xml" rel="self"/>
   
   <link href="https://anzhiruoxi123.github.io/"/>
-  <updated>2021-09-13T09:59:33.982Z</updated>
+  <updated>2021-10-16T09:03:55.944Z</updated>
   <id>https://anzhiruoxi123.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jmeter接口测试</title>
+    <link href="https://anzhiruoxi123.github.io/2021/10/16/jmeter-jie-kou-ce-shi/"/>
+    <id>https://anzhiruoxi123.github.io/2021/10/16/jmeter-jie-kou-ce-shi/</id>
+    <published>2021-10-16T08:30:53.000Z</published>
+    <updated>2021-10-16T09:03:55.944Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java抽象与封装</title>
+    <link href="https://anzhiruoxi123.github.io/2021/10/14/java-chou-xiang-yu-feng-zhuang/"/>
+    <id>https://anzhiruoxi123.github.io/2021/10/14/java-chou-xiang-yu-feng-zhuang/</id>
+    <published>2021-10-14T02:06:17.000Z</published>
+    <updated>2021-10-14T02:12:01.686Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随机加减法</title>
+    <link href="https://anzhiruoxi123.github.io/2021/10/14/sui-ji-jia-jian-fa/"/>
+    <id>https://anzhiruoxi123.github.io/2021/10/14/sui-ji-jia-jian-fa/</id>
+    <published>2021-10-14T01:33:28.000Z</published>
+    <updated>2021-10-14T01:59:07.438Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>linux目录和文件管理</title>
@@ -46,7 +121,7 @@
     <link href="https://anzhiruoxi123.github.io/2021/09/12/linux-xi-tong-an-zhuang-shi-yan/"/>
     <id>https://anzhiruoxi123.github.io/2021/09/12/linux-xi-tong-an-zhuang-shi-yan/</id>
     <published>2021-09-12T03:13:20.000Z</published>
-    <updated>2021-09-12T03:14:41.328Z</updated>
+    <updated>2021-10-13T10:03:32.385Z</updated>
     
     
       
@@ -506,81 +581,6 @@
     
     
     <category term="Python" scheme="https://anzhiruoxi123.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文本进度条</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/15/wen-ben-jin-du-tiao/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/15/wen-ben-jin-du-tiao/</id>
-    <published>2020-10-15T12:11:50.000Z</published>
-    <updated>2021-07-29T12:02:03.685Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>索引和视图</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/15/suo-yin-he-shi-tu/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/15/suo-yin-he-shi-tu/</id>
-    <published>2020-10-15T12:10:55.000Z</published>
-    <updated>2021-07-29T12:02:03.441Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/categories/Mysql/"/>
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/tags/Mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库基本查询</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-ji-ben-cha-xun/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-ji-ben-cha-xun/</id>
-    <published>2020-10-10T11:10:11.000Z</published>
-    <updated>2021-07-29T12:02:03.124Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/categories/Mysql/"/>
-    
-    
-    <category term="Mysql" scheme="https://anzhiruoxi123.github.io/tags/Mysql/"/>
     
   </entry>
   
