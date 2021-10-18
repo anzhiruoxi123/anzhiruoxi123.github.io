@@ -6,7 +6,7 @@
   <link href="https://anzhiruoxi123.github.io/atom.xml" rel="self"/>
   
   <link href="https://anzhiruoxi123.github.io/"/>
-  <updated>2021-10-16T09:03:55.944Z</updated>
+  <updated>2021-10-18T13:17:06.984Z</updated>
   <id>https://anzhiruoxi123.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>封装案例</title>
+    <link href="https://anzhiruoxi123.github.io/2021/10/18/feng-zhuang-an-li/"/>
+    <id>https://anzhiruoxi123.github.io/2021/10/18/feng-zhuang-an-li/</id>
+    <published>2021-10-18T13:04:49.000Z</published>
+    <updated>2021-10-18T13:17:06.984Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://anzhiruoxi123.github.io/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>jmeter接口测试</title>
@@ -317,9 +342,9 @@
     
     <category term="PicGo" scheme="https://anzhiruoxi123.github.io/tags/PicGo/"/>
     
-    <category term="Cmd" scheme="https://anzhiruoxi123.github.io/tags/Cmd/"/>
-    
     <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
+    
+    <category term="Cmd" scheme="https://anzhiruoxi123.github.io/tags/Cmd/"/>
     
   </entry>
   
@@ -350,9 +375,9 @@
     
     <category term="PicGo" scheme="https://anzhiruoxi123.github.io/tags/PicGo/"/>
     
-    <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
-    
     <category term="Typora" scheme="https://anzhiruoxi123.github.io/tags/Typora/"/>
+    
+    <category term="Gitee" scheme="https://anzhiruoxi123.github.io/tags/Gitee/"/>
     
   </entry>
   
@@ -556,31 +581,6 @@
     <category term="Web" scheme="https://anzhiruoxi123.github.io/tags/Web/"/>
     
     <category term="Java" scheme="https://anzhiruoxi123.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>注册验证</title>
-    <link href="https://anzhiruoxi123.github.io/2020/10/15/zhu-ce-yan-zheng/"/>
-    <id>https://anzhiruoxi123.github.io/2020/10/15/zhu-ce-yan-zheng/</id>
-    <published>2020-10-15T12:12:15.000Z</published>
-    <updated>2021-07-29T12:02:03.209Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://anzhiruoxi123.github.io/tags/Python/"/>
     
   </entry>
   

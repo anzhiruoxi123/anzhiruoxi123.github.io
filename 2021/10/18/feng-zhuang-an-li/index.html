@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="analytics, Linux 计算机 网络安全 Mysql">
+    <meta name="keywords" content="封装案例, Linux 计算机 网络安全 Mysql">
     <meta name="description" content="本科 | 计算机信息管理 | 软件工程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>analytics | 壹葉知秋</title>
+    <title>封装案例 | 壹葉知秋</title>
 
     <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -478,12 +478,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/28.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">analytics</h1>
+                    <h1 class="description center-align post-title">封装案例</h1>
                 </div>
             </div>
         </div>
@@ -602,12 +602,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/java/" class="post-category">
+                                java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -616,28 +629,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-31
+                    2021-10-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-31
+                    2021-10-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -657,7 +670,325 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h4 id="案例一"><a href="#案例一" class="headerlink" title="案例一"></a>案例一</h4><p>1.使用面向对象的思想，设计一个用户<code>（User）</code>类，包括用户名、密码 、<code>ID</code>、用户等级、用户积分、收货地址、余额这些属性；方法包括：展示用户信息、密码修改、充值。<br>要求：</p>
+<blockquote>
+<ol>
+<li>设置属性的私有访问权限，通过公有的<code>get</code>,<code>set</code>方法实现对属性的访问</li>
+<li>初始化对象时密码默认<code>111111</code>，余额默认<code>0.0</code>，等级默认<code>1</code>。</li>
+<li>修改密码要求长度至少为<code>8</code>，如无效给用户提示。</li>
+<li>充值金额必须大于<code>10</code>元，如无效给用户提示。</li>
+<li>编写测试类，测试<code>User</code>对象及相关方法（测试数据信息自定义）。</li>
+</ol>
+</blockquote>
+<p><strong><em>详细信息类</em></strong></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> java1<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+
+     <span class="token keyword">private</span> String name<span class="token punctuation">;</span>
+
+     <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+
+     <span class="token keyword">private</span> String sex<span class="token punctuation">;</span>
+
+     <span class="token keyword">private</span> String pwd<span class="token operator">=</span><span class="token string">"111111"</span><span class="token punctuation">;</span>
+
+     <span class="token keyword">private</span> <span class="token keyword">int</span> YE<span class="token punctuation">;</span>
+
+
+
+    <span class="token keyword">public</span> String <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"用户名长度不能小于6！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setpwd</span><span class="token punctuation">(</span>String pwd<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>pwd<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"长度不小于8"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>pwd <span class="token operator">=</span> pwd<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"修改成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setYE</span><span class="token punctuation">(</span><span class="token keyword">int</span> YE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>YE <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"必须大于10元"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>YE <span class="token operator">+=</span> YE<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"余额："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>YE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setAge</span><span class="token punctuation">(</span><span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> String <span class="token function">getSex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> sex<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSex</span><span class="token punctuation">(</span>String sex<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span class="token operator">=</span> sex<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//自定义构造</span>
+    <span class="token keyword">public</span> <span class="token function">Person</span><span class="token punctuation">(</span>String sex<span class="token punctuation">,</span><span class="token keyword">int</span> age<span class="token punctuation">,</span>String name<span class="token punctuation">,</span>String pwd<span class="token punctuation">,</span><span class="token keyword">int</span> YE<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>sex <span class="token operator">=</span> sex<span class="token punctuation">;</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>pwd <span class="token operator">=</span> pwd<span class="token punctuation">;</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>YE <span class="token operator">=</span> YE<span class="token punctuation">;</span>
+
+     <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//实例方法或成员方法</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+     System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我叫"</span><span class="token operator">+</span>name<span class="token operator">+</span><span class="token string">",芳龄："</span><span class="token operator">+</span>age<span class="token operator">+</span><span class="token string">",性别："</span><span class="token operator">+</span>sex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+ <span class="token punctuation">}</span>
+
+
+
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong><em>测试类</em></strong></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> java1<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PersonTest</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          Person p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">"女"</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token string">"小红"</span><span class="token punctuation">,</span><span class="token string">"111111"</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          p<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">"张三"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//          System.out.println(p.getName());</span>
+          p<span class="token punctuation">.</span><span class="token function">setpwd</span><span class="token punctuation">(</span><span class="token string">"11111111"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          p<span class="token punctuation">.</span><span class="token function">setYE</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="案例二"><a href="#案例二" class="headerlink" title="案例二"></a>案例二</h4><ol start="2">
+<li>请使用面向对象的思想设计描述商品信息<br>要求：<blockquote>
+<ol>
+<li>分析商品类别和商品详细信息属性和方法，设计商品类别类和商品详细信息类</li>
+<li>在商品详细信息类中通过属性描述该商品所属类别</li>
+<li>设置属性的私有访问权限，通过公有的<code>get</code>,<code>set</code>方法实现对属性的访问</li>
+<li>编写测试类，测试商品类别类和商品详细信息类的对象及相关方法（测试数据信息自定）</li>
+<li>创建包<code>info</code>—存放商品类别类和商品详细信息类，创建包<code>test</code>—存放测试类<br>参考分析思路:<br>商品类别类：<br>属性：类别编号，类别名称<br>商品详细信息类：<br>属性：商品编号，商品名称，所属类别，商品数量（大于0），商品价格（大于0），<br>方法：盘点的方法，描述商品信息。内容包括商品名称，商品数量，商品价格，现在商品总价以及所属类别信息<br>运行效果图:</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<p>*<strong>详细信息类</strong></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> java3<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">info</span> <span class="token punctuation">{</span>
+<span class="token comment" spellcheck="true">//  商品编号，商品名称，所属类别，商品数量（大于0），商品价格（大于0）    </span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> BH<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> String MC<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> String LB<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">int</span> SL<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">double</span> JG<span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">double</span> ZJ<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getZJ</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ZJ<span class="token operator">=</span>SL<span class="token operator">*</span>JG<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ZJ<span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+
+
+
+    <span class="token comment" spellcheck="true">//get和set方法</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getBH</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> BH<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setBH</span><span class="token punctuation">(</span><span class="token keyword">int</span> bH<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        BH <span class="token operator">=</span> bH<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> String <span class="token function">getMC</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> MC<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setMC</span><span class="token punctuation">(</span>String mC<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        MC <span class="token operator">=</span> mC<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> String <span class="token function">getLB</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> LB<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setLB</span><span class="token punctuation">(</span>String lB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        LB <span class="token operator">=</span> lB<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getSL</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> SL<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSL</span><span class="token punctuation">(</span><span class="token keyword">int</span> sL<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        SL <span class="token operator">=</span> sL<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getJG</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> JG<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setJG</span><span class="token punctuation">(</span><span class="token keyword">double</span> jG<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        JG <span class="token operator">=</span> jG<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setZJ</span><span class="token punctuation">(</span><span class="token keyword">double</span> zJ<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ZJ <span class="token operator">=</span> zJ<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//商品数量必须大于0元</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">SetSL</span><span class="token punctuation">(</span><span class="token keyword">int</span> SL<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>SL <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token comment" spellcheck="true">//            System.out.println("==================================");</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>SL <span class="token operator">+=</span> SL<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品数量必须大于0元  !  "</span><span class="token operator">+</span><span class="token string">"("</span><span class="token operator">+</span><span class="token string">"商品数量："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>SL<span class="token operator">+</span><span class="token string">")"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>SL <span class="token operator">+=</span> SL<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品数量："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>SL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//商品价格必须大于0元</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">SetJG</span><span class="token punctuation">(</span><span class="token keyword">double</span> JG<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>JG <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"库存数量异常，请联系管理员！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>JG <span class="token operator">=</span> JG<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品价格必须大于0元  !  "</span><span class="token operator">+</span><span class="token string">"("</span><span class="token operator">+</span><span class="token string">"商品数量："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>JG<span class="token operator">+</span><span class="token string">")"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>JG <span class="token operator">=</span> JG<span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品价格："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>JG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//    public void SetSG(int SL,double JG) {</span>
+<span class="token comment" spellcheck="true">//    if(SL &lt; 0 | JG &lt; 0) {</span>
+<span class="token comment" spellcheck="true">//        System.out.println("库存数量异常，请联系管理员！");</span>
+<span class="token comment" spellcheck="true">////        this.JG = JG;</span>
+<span class="token comment" spellcheck="true">////        System.out.println("商品价格必须大于0元  !  "+"("+"商品数量："+this.JG+")");</span>
+<span class="token comment" spellcheck="true">////        </span>
+<span class="token comment" spellcheck="true">////        this.SL += SL;</span>
+<span class="token comment" spellcheck="true">////        System.out.println("商品数量必须大于0元  !  "+"("+"商品数量："+this.SL+")");</span>
+<span class="token comment" spellcheck="true">//    }else {</span>
+<span class="token comment" spellcheck="true">//        this.SL += SL;</span>
+<span class="token comment" spellcheck="true">//        System.out.println("商品数量："+this.SL);</span>
+<span class="token comment" spellcheck="true">//        </span>
+<span class="token comment" spellcheck="true">//        this.JG = JG;</span>
+<span class="token comment" spellcheck="true">//        System.out.println("商品价格："+this.JG);</span>
+<span class="token comment" spellcheck="true">//    }</span>
+<span class="token comment" spellcheck="true">//    </span>
+<span class="token comment" spellcheck="true">//}    </span>
+
+
+  <span class="token comment" spellcheck="true">//自定义构造</span>
+    <span class="token keyword">public</span> <span class="token function">info</span><span class="token punctuation">(</span><span class="token keyword">int</span> BH<span class="token punctuation">,</span>String MC<span class="token punctuation">,</span>String LB<span class="token punctuation">,</span><span class="token keyword">int</span> SL<span class="token punctuation">,</span><span class="token keyword">double</span> JG<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>BH <span class="token operator">=</span> BH<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>MC <span class="token operator">=</span> MC<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>LB <span class="token operator">=</span> LB<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>SL <span class="token operator">=</span> SL<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>JG <span class="token operator">=</span> JG<span class="token punctuation">;</span>
+
+     <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品名称："</span><span class="token operator">+</span>MC<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品编号："</span><span class="token operator">+</span>BH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品数量："</span><span class="token operator">+</span>SL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"商品价格"</span><span class="token operator">+</span>JG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"所属类别："</span><span class="token operator">+</span>LB<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"总价"</span><span class="token operator">+</span><span class="token punctuation">(</span>ZJ<span class="token operator">=</span>SL<span class="token operator">*</span>JG<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">XHX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"=================================="</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong><em>测试类</em></strong></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> java3<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//import java1.Person;</span>
+<span class="token keyword">import</span> java3<span class="token punctuation">.</span>info<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        info p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">info</span><span class="token punctuation">(</span><span class="token number">101</span><span class="token punctuation">,</span> <span class="token string">"飘柔洗发水450ml"</span><span class="token punctuation">,</span> <span class="token string">"洗发水"</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span><span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span><span class="token function">XHX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span><span class="token function">SetJG</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span><span class="token function">SetSL</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        p.SetSG(0,0);</span>
+        p<span class="token punctuation">.</span><span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+
+
+<span class="token comment" spellcheck="true">//          System.out.println(p.getName());  </span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -683,7 +1014,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://anzhiruoxi123.github.io/analytics/index.html">https://anzhiruoxi123.github.io/analytics/index.html</a>
+                    <a href="https://anzhiruoxi123.github.io/2021/10/18/feng-zhuang-an-li/">https://anzhiruoxi123.github.io/2021/10/18/feng-zhuang-an-li/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -720,7 +1051,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1195,13 +1530,12 @@ new Valine({
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/analytics/index.html">
+                <a href="/2021/10/18/feng-zhuang-an-li/">
                     <div class="card-image">
                         
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/28.jpg" class="responsive-img" alt="封装案例">
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="analytics">
-                        
-                        <span class="card-title">analytics</span>
+                        <span class="card-title">封装案例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1212,17 +1546,29 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            崔蓬勃
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java/" class="post-category">
+                                    java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1230,16 +1576,15 @@ new Valine({
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/analytics/index.html">
+                <a href="/2021/10/16/jmeter-jie-kou-ce-shi/">
                     <div class="card-image">
                         
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/27.jpg" class="responsive-img" alt="jmeter接口测试">
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/18.jpg" class="responsive-img" alt="analytics">
-                        
-                        <span class="card-title">analytics</span>
+                        <span class="card-title">jmeter接口测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1250,17 +1595,28 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-16
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            崔蓬勃
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java/" class="post-category">
+                                    java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
