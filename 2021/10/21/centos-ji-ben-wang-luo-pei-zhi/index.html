@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据库标准语言sql, Linux 计算机 网络安全 Mysql">
+    <meta name="keywords" content="CentOS基本网络配置, Linux 计算机 网络安全 Mysql">
     <meta name="description" content="本科 | 计算机信息管理 | 软件工程">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数据库标准语言sql | 壹葉知秋</title>
+    <title>CentOS基本网络配置 | 壹葉知秋</title>
 
     <link rel="icon" type="image/png" href="/favicon.png">
 
@@ -465,7 +465,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '57f9d22715c5d7168f12afd0cce0c4af022552c792263e7a510cd0c519882d77';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -478,12 +478,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/29.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据库标准语言sql</h1>
+                    <h1 class="description center-align post-title">CentOS基本网络配置</h1>
                 </div>
             </div>
         </div>
@@ -604,8 +604,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Mysql/">
-                                <span class="chip bg-color">Mysql</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
                             </a>
                         
                     </div>
@@ -616,8 +616,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Mysql/" class="post-category">
-                                Mysql
+                            <a href="/categories/java/" class="post-category">
+                                java
                             </a>
                         
                     </div>
@@ -629,28 +629,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-10
+                    2021-10-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-10-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    789
+                    264
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -670,77 +670,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>欢迎来到<a href="https://anzhiruoxi123.github.io/">鸿鹄会</a>让我们一起学习吧！<br>我的邮箱<a href="https://anzhiruoxi123.github.io/">2779372950@qq.com</a></p>
-<h5 id="1-使用SQL语句创建数据库1-使用SQL语句创建数据库studentsdb。"><a href="#1-使用SQL语句创建数据库1-使用SQL语句创建数据库studentsdb。" class="headerlink" title="1. 使用SQL语句创建数据库1. 使用SQL语句创建数据库studentsdb。"></a>1. 使用SQL语句创建数据库1. 使用SQL语句创建数据库studentsdb。</h5><pre class=" language-csharp"><code class="language-csharp">CREATE DATABASE Studentsdb</code></pre>
-<h5 id="2-使用SQL语句选择studentsdb为当前使用数据库。"><a href="#2-使用SQL语句选择studentsdb为当前使用数据库。" class="headerlink" title="2. 使用SQL语句选择studentsdb为当前使用数据库。"></a>2. 使用SQL语句选择studentsdb为当前使用数据库。</h5><pre class=" language-csharp"><code class="language-csharp">USE Studentsdb</code></pre>
-<h5 id="3-使用SQL语句在studentsdb数据库创建数据表student-info、curriculum、grade，三个表的数据结构如表1-表3所示。"><a href="#3-使用SQL语句在studentsdb数据库创建数据表student-info、curriculum、grade，三个表的数据结构如表1-表3所示。" class="headerlink" title="3. 使用SQL语句在studentsdb数据库创建数据表student_info、curriculum、grade，三个表的数据结构如表1-表3所示。"></a>3. 使用SQL语句在studentsdb数据库创建数据表student_info、curriculum、grade，三个表的数据结构如表1-表3所示。</h5><pre class=" language-csharp"><code class="language-csharp">CREATE TABLE <span class="token function">student_info</span><span class="token punctuation">(</span>
-学号 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> NOT NULL PRIMARY KEY<span class="token punctuation">,</span>
-姓名 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
-性别 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">,</span>studentsdb
-出生日期 DATE<span class="token punctuation">,</span>
-家庭住址 <span class="token function">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-CREATE TABLE <span class="token function">curriculum</span><span class="token punctuation">(</span>
-课程编号 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> NOT NULL PRIMARY KEY<span class="token punctuation">,</span>
-课程名称 <span class="token function">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-学分 INT
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-CREATE TABLE <span class="token function">grade</span><span class="token punctuation">(</span>
-学号 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> NOT <span class="token keyword">null</span><span class="token punctuation">,</span>
-课程编号 <span class="token function">CHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">,</span>
-分数 INT<span class="token punctuation">,</span>
-PRIMARY <span class="token function">KEY</span><span class="token punctuation">(</span>学号<span class="token punctuation">,</span>课程编号<span class="token punctuation">)</span>
-
-<span class="token punctuation">)</span>；</code></pre>
-<h5 id="4-使用SQL语句INSERT向studentsdb数据库的student-info、curriculum、grade表插入数据，各表数据如表4-表6所示。"><a href="#4-使用SQL语句INSERT向studentsdb数据库的student-info、curriculum、grade表插入数据，各表数据如表4-表6所示。" class="headerlink" title="4. 使用SQL语句INSERT向studentsdb数据库的student_info、curriculum、grade表插入数据，各表数据如表4-表6所示。"></a>4. 使用SQL语句INSERT向studentsdb数据库的student_info、curriculum、grade表插入数据，各表数据如表4-表6所示。</h5><pre class=" language-csharp"><code class="language-csharp">INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'张青平'</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'2000-10-01'</span><span class="token punctuation">,</span><span class="token string">'衡阳东风路77号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'刘东阳'</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'1998-12-09'</span><span class="token punctuation">,</span><span class="token string">'东阳市八一北路33号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'马晓夏'</span><span class="token punctuation">,</span><span class="token string">'女'</span><span class="token punctuation">,</span><span class="token string">'1995-05-12'</span><span class="token punctuation">,</span><span class="token string">'长岭市五一路963号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0004'</span><span class="token punctuation">,</span><span class="token string">'钱忠理'</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'1994-09-23'</span><span class="token punctuation">,</span><span class="token string">'滨海市洞庭大道279号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0005'</span><span class="token punctuation">,</span><span class="token string">'孙海洋'</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'1995-04-03'</span><span class="token punctuation">,</span><span class="token string">'长岛市解放路27号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0006'</span><span class="token punctuation">,</span><span class="token string">'郭小斌'</span><span class="token punctuation">,</span><span class="token string">'男'</span><span class="token punctuation">,</span><span class="token string">'1997-11-10'</span><span class="token punctuation">,</span><span class="token string">'南山市红旗路113号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0007'</span><span class="token punctuation">,</span><span class="token string">'肖月玲'</span><span class="token punctuation">,</span><span class="token string">'女'</span><span class="token punctuation">,</span><span class="token string">'1996-12-07'</span><span class="token punctuation">,</span><span class="token string">'东方市南京路11号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO student_info <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0008'</span><span class="token punctuation">,</span><span class="token string">'张玲珑'</span><span class="token punctuation">,</span><span class="token string">'女'</span><span class="token punctuation">,</span><span class="token string">'1997-12-24'</span><span class="token punctuation">,</span><span class="token string">'滨江市新建路97号'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-INSERT INTO curriculum <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'计算机应用基础'</span><span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO curriculum <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'C语言程序设计'</span><span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO curriculum <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'数据库原理及应用'</span><span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO curriculum <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0004'</span><span class="token punctuation">,</span><span class="token string">'英语'</span><span class="token punctuation">,</span><span class="token string">'4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO curriculum <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0005'</span><span class="token punctuation">,</span><span class="token string">'数学'</span><span class="token punctuation">,</span><span class="token string">'4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'80'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'91'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'88'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'0004'</span><span class="token punctuation">,</span><span class="token string">'85'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'0005'</span><span class="token punctuation">,</span><span class="token string">'77'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'73'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'68'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'80'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'0004'</span><span class="token punctuation">,</span><span class="token string">'79'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'0005'</span><span class="token punctuation">,</span><span class="token string">'73'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'0001'</span><span class="token punctuation">,</span><span class="token string">'84'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'0002'</span><span class="token punctuation">,</span><span class="token string">'92'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'81'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'0004'</span><span class="token punctuation">,</span><span class="token string">'82'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-INSERT INTO grade <span class="token function">VALUES</span><span class="token punctuation">(</span><span class="token string">'0003'</span><span class="token punctuation">,</span><span class="token string">'0005'</span><span class="token punctuation">,</span><span class="token string">'75'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h5 id="5-使用SQL语句ALTER-TABLE修改curriculum表的“课程名称”列，使之为空。"><a href="#5-使用SQL语句ALTER-TABLE修改curriculum表的“课程名称”列，使之为空。" class="headerlink" title="5. 使用SQL语句ALTER TABLE修改curriculum表的“课程名称”列，使之为空。"></a>5. 使用SQL语句ALTER TABLE修改curriculum表的“课程名称”列，使之为空。</h5><pre class=" language-csharp"><code class="language-csharp">ALTER TABLE curriculum
-MODIFY COLUMN 课程名称 <span class="token function">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> NULL<span class="token punctuation">;</span></code></pre>
-<h5 id="6-使用SQL语句ALTER-TABLE修改grade表的“分数”列，使其数据类型为decimal-5-2-。"><a href="#6-使用SQL语句ALTER-TABLE修改grade表的“分数”列，使其数据类型为decimal-5-2-。" class="headerlink" title="6. 使用SQL语句ALTER TABLE修改grade表的“分数”列，使其数据类型为decimal(5,2)。"></a>6. 使用SQL语句ALTER TABLE修改grade表的“分数”列，使其数据类型为decimal(5,2)。</h5><pre class=" language-csharp"><code class="language-csharp">ALTER TABLE grade 
-MODIFY COLUMN 分数 <span class="token function">DECIMAL</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h5 id="7-使用SQL语句ALTER-TABLE为student-info表添加一个名为“备注”的数据列，其数据类型为varchar-50-。"><a href="#7-使用SQL语句ALTER-TABLE为student-info表添加一个名为“备注”的数据列，其数据类型为varchar-50-。" class="headerlink" title="7. 使用SQL语句ALTER TABLE为student_info表添加一个名为“备注”的数据列，其数据类型为varchar(50)。"></a>7. 使用SQL语句ALTER TABLE为student_info表添加一个名为“备注”的数据列，其数据类型为varchar(50)。</h5><pre class=" language-csharp"><code class="language-csharp">ALTER TABLE student_info
-ADD 备注 <span class="token function">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<h5 id="8-使用SQL语句创建数据库studb，并在此数据库下创建表stu，表结构与数据与studentsdb的student-info表相同。"><a href="#8-使用SQL语句创建数据库studb，并在此数据库下创建表stu，表结构与数据与studentsdb的student-info表相同。" class="headerlink" title="8. 使用SQL语句创建数据库studb，并在此数据库下创建表stu，表结构与数据与studentsdb的student_info表相同。"></a>8. 使用SQL语句创建数据库studb，并在此数据库下创建表stu，表结构与数据与studentsdb的student_info表相同。</h5><pre class=" language-csharp"><code class="language-csharp">CREATE DATABASE studb<span class="token punctuation">;</span>
-USE studb<span class="token punctuation">;</span>
-CREATE TABLE stu
-AS <span class="token keyword">select</span><span class="token operator">*</span>FROM studentsdb<span class="token punctuation">.</span>student_info<span class="token punctuation">;</span></code></pre>
-<h5 id="9-使用SQL语句删除表stu中学号为0004的记录。"><a href="#9-使用SQL语句删除表stu中学号为0004的记录。" class="headerlink" title="9. 使用SQL语句删除表stu中学号为0004的记录。"></a>9. 使用SQL语句删除表stu中学号为0004的记录。</h5><pre class=" language-csharp"><code class="language-csharp">SET SQL_SAFE_updates<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-DELETE FROM stu WHERE 学号<span class="token operator">=</span><span class="token string">'0004'</span><span class="token punctuation">;</span></code></pre>
-<h5 id="10-使用SQL语句更新表stud中学号为0002的家庭住址为“滨江市新建路96号”。"><a href="#10-使用SQL语句更新表stud中学号为0002的家庭住址为“滨江市新建路96号”。" class="headerlink" title="10.使用SQL语句更新表stud中学号为0002的家庭住址为“滨江市新建路96号”。"></a>10.使用SQL语句更新表stud中学号为0002的家庭住址为“滨江市新建路96号”。</h5><pre class=" language-csharp"><code class="language-csharp">UPDATE stu SET 家庭住址<span class="token operator">=</span><span class="token string">'滨江市新建路96号'</span>WHERE 学号<span class="token operator">=</span><span class="token string">'0002'</span><span class="token punctuation">;</span></code></pre>
-<h5 id="11-删除表stud的“备注”列。"><a href="#11-删除表stud的“备注”列。" class="headerlink" title="11.删除表stud的“备注”列。"></a>11.删除表stud的“备注”列。</h5><pre class=" language-csharp"><code class="language-csharp">ALTER TABLE stu drop column 备注；
-DROP COLUMN 备注<span class="token punctuation">;</span></code></pre>
-<h5 id="12-删除表stud。"><a href="#12-删除表stud。" class="headerlink" title="12.删除表stud。"></a>12.删除表stud。</h5><pre class=" language-csharp"><code class="language-csharp">DROP TABLE stu<span class="token punctuation">;</span></code></pre>
-<h5 id="13-删除数据库studb"><a href="#13-删除数据库studb" class="headerlink" title="13.删除数据库studb"></a>13.删除数据库studb</h5><pre class=" language-csharp"><code class="language-csharp">DROP DATABASE studb<span class="token punctuation">;</span></code></pre>
+                <h4 id="CentOS基本网络配置"><a href="#CentOS基本网络配置" class="headerlink" title="CentOS基本网络配置"></a>CentOS基本网络配置</h4><p>本课程要学习分布式数据库，需要主机（虚拟机）之间进行通信，需要设置基本的网络连接。</p>
+<p>下列操作<br>1、    win10+R：输入<code>services.msc</code>，进入服务面板找到<code>VMware DHCP Service</code>和<code>VMware NAT Service</code>并启动服务。</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/img/202110211214912.png"></p>
+<p>2、打开VMware<br>3、系统，用root登录系统<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/img/202110211215927.png"></p>
+<p>4、执行命令<br>[hadoop@localhost root]$ vi /etc/sysconfig/network-scripts/ifcfg-ens33<br>打开网卡配置文件</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/img/202110211215940.png"></p>
+<blockquote>
+<p>按下i键进入编辑模式，将最后一行：ONBOOT=no修改为yes<br>按ESC键，输入：wq保存并退出<br>执行命令<br>[hadoop@localhost root]$ nmcli conn up ens33<br>启用网卡，或者重新启动网卡<br>执行：ip add 查看你的虚拟机ip地址信息</p>
+</blockquote>
+<p>实验小结：<br>Linux基本网络设置：</p>
+<ul>
+<li>使用vi命令可以用文本编辑配置文件</li>
+<li>使用i键可以快捷进入编辑模式</li>
+<li>使用：wq可以对文本进行编辑后保存</li>
+<li>使用：nmcli命令可以对网卡进行重启、重启操作</li>
+<li>使用ip add可以查看centOS8的ip地址信息</li>
+</ul>
 
                 
             </div>
@@ -767,7 +713,7 @@ DROP COLUMN 备注<span class="token punctuation">;</span></code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-biao-zhun-yu-yan-sql/">https://anzhiruoxi123.github.io/2020/10/10/shu-ju-ku-biao-zhun-yu-yan-sql/</a>
+                    <a href="https://anzhiruoxi123.github.io/2021/10/21/centos-ji-ben-wang-luo-pei-zhi/">https://anzhiruoxi123.github.io/2021/10/21/centos-ji-ben-wang-luo-pei-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -805,8 +751,8 @@ DROP COLUMN 备注<span class="token punctuation">;</span></code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Mysql/">
-                                    <span class="chip bg-color">Mysql</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
                                 </a>
                             
                         </div>
@@ -1278,16 +1224,17 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/10/10/while-he-for-ying-yong/">
+                <a href="/2021/10/21/centos-ji-ben-wang-luo-pei-zhi/">
                     <div class="card-image">
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/13.jpg" class="responsive-img" alt="while和for应用">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/29.jpg" class="responsive-img" alt="CentOS基本网络配置">
                         
-                        <span class="card-title">while和for应用</span>
+                        <span class="card-title">CentOS基本网络配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1297,26 +1244,27 @@ new Valine({
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/java/" class="post-category">
+                                    java
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
                 </div>
@@ -1330,12 +1278,12 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/04/kan-ban-niang/">
+                <a href="/2021/10/18/feng-zhuang-an-li/">
                     <div class="card-image">
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/1.jpg" class="responsive-img" alt="看板娘">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://gitee.com/yi-yezhiqiu/Images/raw/master/blog/29.jpg" class="responsive-img" alt="封装案例">
                         
-                        <span class="card-title">看板娘</span>
+                        <span class="card-title">封装案例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1346,14 +1294,14 @@ new Valine({
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/java/" class="post-category">
+                                    java
                                 </a>
                             
                             
@@ -1363,8 +1311,8 @@ new Valine({
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
                 </div>
